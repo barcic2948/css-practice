@@ -1,0 +1,58 @@
+:root {
+    --dark: rgb(20, 20, 20);
+    --yellow: rgb(253, 216, 53);
+    --blue: rgb(98, 0, 234);
+    
+    --c1: rgb(197, 57, 167);
+    --c2: rgb(42, 157, 143);
+    
+    --left-color: var(--c1);
+    --right-color: var(--c2);
+  }
+
+
+body {
+    background-color: var(--dark);
+    margin: 0px;
+}
+
+.side {
+    display: grid;
+    height: 100vh;
+    overflow: hidden;
+    place-items: center;
+    position: absolute;
+    width: 100%;
+}
+
+.side .title {
+    font-family: "Rubik", sans-serif;
+    font-size: 8vw;
+    margin: 0px 25vw;
+    width: 60vw;
+}
+
+.side .fancy {
+    font-family: "Lobster", cursive;
+    font-size: 1.3em;
+}
+
+#left-side {
+    color: var(--dark);
+    background-color: var(--blue);
+    z-index: 2;
+    width: 60%;
+}
+
+#left-side .fancy {
+    color: var(--c1);
+}
+
+#right-side {
+    color: white;
+    background-color: var(--yellow);
+}
+
+#right-side .fancy {
+    color: var(--c2);
+}
